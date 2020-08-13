@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-build</artifactId>
-	<version>1.4.0.BUILD-SNAPSHOT</version>
+	<version>1.4.0.RELEASE</version>
 	<packaging>pom</packaging>
 	<name>Spring Boot Build</name>
 	<description>Spring Boot Build</description>
@@ -184,7 +184,8 @@
 										<property name="sourceFile" value="spring-boot-dependencies/pom.xml" />
 										<xslt in="${sourceFile}" out="${sourceFile}.new" force="true">
 											<style>
-												<string><![CDATA[
+												<string>
+													<![CDATA[
 <xsl:stylesheet version="2.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:m="http://maven.apache.org/POM/4.0.0"
 	exclude-result-prefixes="m">
